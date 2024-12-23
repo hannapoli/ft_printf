@@ -1,6 +1,19 @@
-remove hint
-headers
+!!!Una vez que superes este ejercicio, podrás incluir ft_printf() en tu
+libft, por lo que podrás utilizarla en futuros proyectos en C.!!!
+
+Archivos a entregar: Makefile, *.h, */*.h, *.c, */*.c
+
+remove hint, info
+header
 library
+git add, commit, push
+commented main with my and original func to check!
+
+Se puede usar libft
+Si tu proyecto permite el uso de la libft, deberás copiar su fuente y sus Makefile
+asociados en un directorio libft con su correspondiente Makefile. El Makefile
+de tu proyecto debe compilar primero la librería utilizando su Makefile, y después
+compilar el proyecto.
 
 # Reimplementing print_f 
 
