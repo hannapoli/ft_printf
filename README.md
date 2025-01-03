@@ -68,7 +68,7 @@ void va_copy(va_list dest, va_list src);
 
 
 Remarks
-The va_arg, va_copy, va_end, and va_start macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in STDARG.H (#include <stdarg.h>)conform to the ISO C99 standard; the macros defined in VARARGS.H are deprecated but are retained for backward compatibility with code that was written before the ANSI C89 standard.
+The va_arg, va_copy, va_end, and va_start macros provide a portable way to access the arguments to a function when the function takes a variable number of arguments. There are two versions of the macros: The macros defined in <stdarg.h> conform to the ISO C99 standard.
 
 These macros assume that the function takes a fixed number of required arguments, followed by a variable number of optional arguments. The required arguments are declared as ordinary parameters to the function and can be accessed through the parameter names. The optional arguments are accessed through the macros in STDARG.H, which sets a pointer to the first optional argument in the argument list, retrieves arguments from the list, and resets the pointer when argument processing is completed.
 
@@ -105,6 +105,26 @@ The va_copy() macro copies the (previously initialized) variable argument list s
 va_copy makes a copy of a list of arguments in its current state. The src parameter must already be initialized with va_start; it may have been updated with va_arg calls, but must not have been reset with va_end. The next argument that's retrieved by va_arg from dest is the same as the next argument that's retrieved from src.
 
 After all arguments have been retrieved, va_end resets the pointer to NULL. va_end must be called on each argument list that's initialized with va_start or va_copy before the function returns.
+
+---------
+va_start must be called before any use of va_arg - otherwise your va_list variable/table will be empty.
+
+va_list - new object type
+va_list is an object type suitable for holding the information needed by the macros va_start, va_copy, va_arg, and va_end (that you will understand in a few minutes). In other words, it is a list that will contain all the dynamic arguments.
+
+To create a variable of this type, you will have to do it the same way as any other variable.
+
+va_list    any_name_you_want;
+
+// we will call it args for the next example:
+va_list    args;
+
+calling variable args:
+va_arg( args,  char * )
+va_arg( args, int )
+
+va_end (args); to free memory
+
 -------------------------
 
 The decoded hint (check and del):
