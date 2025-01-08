@@ -51,7 +51,7 @@ printf() returns an int to check for errors:
 
 It is a variadic function (accepts a variable number of arguments instead of the fixed one). The variadic function must have at least one mandatory argument.
 
-When someone calls the printf(), we don't know in advance how many elements the person wants to display (how many times the format specifier will be used).
+Until someone calls the printf(), we don't know in advance how many elements the user wants to display (how many times the format specifier will be used).
 -------------------
 variable argument lists
 
