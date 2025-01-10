@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 16:40:26 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/10 19:56:17 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/10 20:12:32 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,10 @@ int	ft_put_char(char c)
 	write(1, &c, 1);
 	return (1);
 }
-
+/* 
 int	main(void)
 {
 	ft_put_char('!');
 	return (0);
 }
+ */

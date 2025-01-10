@@ -1,26 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_put_unsigned.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/23 16:06:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/10 22:54:00 by hpolishc         ###   ########.fr       */
+/*   Created: 2025/01/10 22:41:40 by hpolishc          #+#    #+#             */
+/*   Updated: 2025/01/10 23:02:31 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "libftprintf.h"
 
-# include <unistd.h>
-# include <stdarg.h>
-# include <stdlib.h>
-
-int	ft_put_char(char c);
-int	ft_put_str(char *str);
-
-int ft_type_check(char const type, va_list args);
-int ft_printf(char const *str, ...);
-
-#endif
+int	ft_put_unsigned(unsigned int n)
+{}

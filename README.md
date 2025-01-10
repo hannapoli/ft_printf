@@ -4,6 +4,7 @@ libft, por lo que podrás utilizarla en futuros proyectos en C.!!!
 Archivos a entregar: Makefile, _.h, _/_.h, _.c, _/_.c
 
 remove readme
+comment main
 header
 library
 git add, commit, push
@@ -34,15 +35,15 @@ malloc, free, write, va_start, va_arg, va_copy, va_end.
 
 - You have to implement the following conversions: cspdiuxX%:
 
-  - %c prints a single character.
-  - %s prints a string (as defined by default in C).
-  - %p the void \* pointer given as an argument is printed in hexadecimal format.
-  - %d prints a decimal (base 10) number.
-  - %i prints an integer in base 10.
-  - %u prints an unsigned decimal (base 10) number.
-  - %x prints a lowercase hexadecimal (base 16) number.
-  - %X prints an uppercase hexadecimal (base 16) number.
-  - % % to print the percent symbol.
+  - %c: prints a single character.
+  - %s: prints a string (as defined by default in C).
+  - %p: the void \* pointer given as an argument is printed in hexadecimal format.
+  - %d: prints a decimal (base 10) number.
+  - %i: prints an integer in base 10.
+  - %u: prints an unsigned decimal (base 10) number.
+  - %x: prints a lowercase hexadecimal (base 16) number.
+  - %X: prints an uppercase hexadecimal (base 16) number.
+  - % %: to print the percent symbol.
 
 ---
 
