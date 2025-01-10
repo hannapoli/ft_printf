@@ -55,22 +55,11 @@ It is a variadic function (accepts a variable number of arguments instead of the
 
 ## Until someone calls the printf(), we don't know in advance how many elements the user wants to display (how many times the format specifier will be used).
 
-variable argument lists
+va_list is a list that will contain all the dynamic arguments.
 
 Return value
 va_arg returns the current argument.
 va_copy, va_start and va_end don't return values.
-
-va_list is a list that will contain all the dynamic arguments.
-
-va_list args;
-
-va_start(args, string);
-
-va_arg( args, char \* )
-va_arg( args, int )
-
-va_end (args);
 
 #include <stdarg.h>
 
@@ -128,27 +117,3 @@ Description of how printf works:
 5. Returns the final number of characters printed.
 
 parse -> fetch args -> convert args -> assemble output and display it -> error management.
-
-Draft code:
-
-call different functions for each type?
-using of va macros?
-
-#include <stdarg.h>
-
-int ft_printf(char const \*, ...);
-
-int count;
-char character;
-
-count = 0;
-while (count >= 0)????
-if (character != '%')
-write()
-return count
-else (next index- type funct)
-ft_putstr() - write chars one by one
-count the chars (to add it to init count)
-return (count)?
-
-Maybe while??? (I have to come beck to the 1st step to cont printing)

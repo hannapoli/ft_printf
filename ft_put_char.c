@@ -1,46 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_put_char.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/23 16:14:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/10 19:56:24 by hpolishc         ###   ########.fr       */
+/*   Created: 2025/01/10 16:40:26 by hpolishc          #+#    #+#             */
+/*   Updated: 2025/01/10 19:56:17 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int ft_printf(char const *str, ...)
+int	ft_put_char(char c)
 {
-	int		count;
-	int		i;
-	va_list args;
-
-	count = 0;
-	i = 0;
-	va_start(args, str);
-	while (str[i] != '\0')
-	{
-		if (str[i] == '%')
-		{
-			// a function that checks a format and writes the data, return (count?)
-			i++;
-		}
-		else
-		{
-			write(1, &str[i], 1);
-			count++;
-		}
-		i++;
-	}
-	va_end(args);
-	return (count);
+	write(1, &c, 1);
+	return (1);
 }
 
-int main(void)
+int	main(void)
 {
-	ft_printf("Sample test\n");
+	ft_put_char('!');
 	return (0);
 }
