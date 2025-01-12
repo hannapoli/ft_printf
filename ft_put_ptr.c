@@ -6,12 +6,14 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:39:44 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/10 23:06:32 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/12 18:23:00 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
 int ft_put_ptr(void *ptr)
-{}
+{
+    
+}
 

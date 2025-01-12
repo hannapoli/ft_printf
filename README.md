@@ -1,5 +1,7 @@
 !!!Una vez que superes este ejercicio, podrás incluir ft_printf() en tu
 libft, por lo que podrás utilizarla en futuros proyectos en C.!!!
+remove libft??? i use the custom functs for this project.
+triple NORM check!
 
 Archivos a entregar: Makefile, _.h, _/_.h, _.c, _/_.c
 

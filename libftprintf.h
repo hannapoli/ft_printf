@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 16:06:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/10 22:54:00 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/12 20:48:41 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 int	ft_put_char(char c);
 int	ft_put_str(char *str);
 
+int	ft_put_di(int n);
+int	ft_put_unsigned(unsigned int n);
 int ft_type_check(char const type, va_list args);
 int ft_printf(char const *str, ...);
 
