@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:40:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/12 20:29:10 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/13 20:41:45 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ int	ft_put_di(int n)
 /* 
 int	main(void)
 {
-	ft_put_di(42);
+	ft_put_di(300);
 	return (0);
-}
- */
+} */

@@ -6,7 +6,7 @@
 #    By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/19 17:08:55 by hpolishc          #+#    #+#              #
-#    Updated: 2024/12/19 17:14:40 by hpolishc         ###   ########.fr        #
+#    Updated: 2025/01/13 22:46:03 by hpolishc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,9 @@ CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
 
-SRCS = ft_printf.c
+SRCS = ft_printf.c /
+		ft_put_char.c ft_put_str.c ft_put_ptr.c /
+		ft_put_di.c ft_put_unsigned.c ft_put_hex.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -26,7 +28,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		ar rc $(NAME) $(OBJS)
+		ar rcs $(NAME) $(OBJS)
 
 clean:
 		rm -f $(OBJS)

@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:41:40 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/12 20:48:08 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/13 23:34:52 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,10 @@ int	ft_put_unsigned(unsigned int n)
 	return (count);
 }
 /* 
+#include <limits.h>
+
 int	main(void)
 {
-	ft_put_unsigned(4294967295);
+	ft_put_unsigned(UINT_MAX);
 	return (0);
 } */
