@@ -6,11 +6,11 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:53:25 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/13 12:26:56 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:26:23 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_to_hex(unsigned long n, char *hex)
 {

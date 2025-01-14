@@ -6,11 +6,11 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 16:14:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/13 23:47:02 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:26:00 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_type_check(char const type, va_list args)
 {
@@ -36,6 +36,17 @@ int	ft_type_check(char const type, va_list args)
 	return (count);
 }
 
+int	ft_err_check(int t_check, va_list args)
+{
+	if (t_check == -1)
+	{
+		write(2, "Error: unsupported format specifier\n", 36);
+		va_end(args);
+		return (-1);
+	}
+	return (t_check);
+}
+
 int	ft_printf(char const *str, ...)
 {
 	int			i;
@@ -52,12 +63,9 @@ int	ft_printf(char const *str, ...)
 		{
 			i++;
 			t_check = ft_type_check(str[i], args);
+			t_check = ft_err_check (t_check, args);
 			if (t_check == -1)
-			{
-				write(2, "Error: unsupported format specifier\n", 36);
-				va_end(args);
 				return (-1);
-			}
 			count = count + t_check;
 		}
 		else
@@ -67,7 +75,7 @@ int	ft_printf(char const *str, ...)
 	va_end(args);
 	return (count);
 }
-
+/* 
 #include <stdio.h>
 #include <limits.h>
 
@@ -94,4 +102,4 @@ int	main(void)
 	ft_printf("Get an error msg: %q\n");
 
 	return (0);
-}
+}  */

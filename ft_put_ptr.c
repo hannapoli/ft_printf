@@ -6,11 +6,11 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:39:44 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/13 20:26:08 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:26:26 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_put_ptr(void *ptr)
 {

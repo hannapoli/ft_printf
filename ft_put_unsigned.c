@@ -6,11 +6,11 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:41:40 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/13 23:34:52 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:26:39 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_put_unsigned(unsigned int n)
 {

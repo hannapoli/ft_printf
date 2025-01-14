@@ -6,11 +6,11 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:40:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/13 20:41:45 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:26:18 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_put_di(int n)
 {
@@ -20,12 +20,12 @@ int	ft_put_di(int n)
 	if (n == -2147483648)
 	{
 		write(1, "-2147483648", 11);
-		count = 11;
+		return (11);
 	}
 	else if (n < 0)
 	{
 		count = count + ft_put_char('-');
-		count = ft_put_di(-n);
+		count = count + ft_put_di(-n);
 	}
 	else if (n > 9)
 	{
