@@ -1,20 +1,4 @@
-1. triple NORM check!
-2. remove this doc from 42 git!
-3. check the folder contents according to the pdf requirements (remove ./a.out)
-4. comment main 
-5. header in every file ✅
-6. check names ✅
-7. check dict and makefile ✅
-8. call makefile, re. fclean ... ✅
-tests
-9. run tests to check nil!
-last: git add ., commit, push
-
-
-Archivos a entregar: 
-Makefile, _.h, _/_.h, _.c, _/_.c
-
-# Reimplementing print_f
+# Reimentation of printf()
 
 #### Task: 
 write a library that containns a function ft_printf() that immitates the original printf().
@@ -35,7 +19,7 @@ malloc, free, write, va_start, va_arg, va_copy, va_end.
 - You have to implement the following conversions:
 
   - %c: prints a single character.
-  - %s: prints a string (as defined by default in C).
+  - %s: prints a string.
   - %p: the void pointer given as an argument is printed in hexadecimal format.
   - %d: prints a decimal (base 10) number.
   - %i: prints an integer in base 10.
@@ -68,11 +52,13 @@ Until someone calls the printf(), we don't know in advance how many elements the
 
 va_list in <stdarg.h> library is a list that contains all the dynamic arguments.
 
-void *va_start*(va_list arg_ptr, last) - starts the list and connects it to the last fixed argument.
-type *va_arg*(va_list arg_ptr, type)
-void *va_end*(va_list arg_ptr) - frees the used memory.
+* void *va_start*(va_list arg_ptr, last) - starts the list and connects it to the last fixed argument.
 
-void *va_copy*(va_list dest, va_list src)
+* type *va_arg*(va_list arg_ptr, type)
+
+* void *va_end*(va_list arg_ptr) - frees the used memory.
+
+* void *va_copy*(va_list dest, va_list src)
 
 *arg_ptr* is a variable that is initialized by va_start to point to the first variable argument.
 
