@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 22:39:44 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/14 11:26:26 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/15 00:05:19 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,11 @@ int	ft_put_ptr(void *ptr)
 	int				count;
 
 	count = 0;
+	if (ptr == NULL)
+	{
+		count = count + ft_put_str("(nil)");
+		return (count);
+	}
 	hex_low = "0123456789abcdef";
 	num_ptr = (unsigned long)ptr;
 	count = count + ft_put_str("0x");

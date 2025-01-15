@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 16:14:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/14 11:26:00 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/15 00:59:17 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,10 @@ int	main(void)
 {
 	ft_printf("Write a character %c\n", '!');
 	ft_printf("Write a string %s\n", "Hello, there!");
-	ft_printf("Write a pointer %p\n", (void *)0x7ffee3d6b9f8);
-	ft_printf("Write a number %d, %i\n", 42, 42);
+	ft_printf("Write a string %s\n", (char *) NULL);
+	ft_printf("Write a pointer %p\n", (void *)42);
+	ft_printf("Write a pointer %p\n", NULL);
+	ft_printf("Write a number %d, %i\n", 2147483647, 2147483647);
 	ft_printf("Write an unsigned number %u\n", UINT_MAX);
 	ft_printf("Write a hex number %x, %X\n", 456597567, 456597567);
 	ft_printf("Write a percent sign %%\n");
@@ -92,8 +94,10 @@ int	main(void)
 	ft_printf("\nComparison to the results of the original printf():\n");
 	printf("Write a character %c\n", '!');
 	printf("Write a string %s\n", "Hello, there!");
-	printf("Write a pointer %p\n", (void *)0x7ffee3d6b9f8);
-	printf("Write a number %d, %i\n", 42, 42);
+	printf("Write a string %s\n", (char *) NULL);
+	printf("Write a pointer %p\n", (void *)42);
+	printf("Write a pointer %p\n", NULL);
+	printf("Write a number %d, %i\n", 2147483647, 2147483647);
 	printf("Write an unsigned number %u\n", UINT_MAX);
 	printf("Write a hex number %x, %X\n", 456597567, 456597567);
 	printf("Write a percent sign %%\n");
@@ -102,4 +106,4 @@ int	main(void)
 	ft_printf("Get an error msg: %q\n");
 
 	return (0);
-}  */
+} */
