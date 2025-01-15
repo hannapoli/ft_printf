@@ -6,7 +6,7 @@
 /*   By: hpolishc <hpolishc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 16:14:24 by hpolishc          #+#    #+#             */
-/*   Updated: 2025/01/15 00:59:17 by hpolishc         ###   ########.fr       */
+/*   Updated: 2025/01/15 15:18:24 by hpolishc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	ft_err_check(int t_check, va_list args)
 {
 	if (t_check == -1)
 	{
-		write(2, "Error: unsupported format specifier\n", 36);
+		write(2, "error: invalid conversion specifier\n", 35);
 		va_end(args);
 		return (-1);
 	}
@@ -83,7 +83,7 @@ int	main(void)
 {
 	ft_printf("Write a character %c\n", '!');
 	ft_printf("Write a string %s\n", "Hello, there!");
-	ft_printf("Write a string %s\n", (char *) NULL);
+	ft_printf("Write a string %s\n", (char *)NULL);
 	ft_printf("Write a pointer %p\n", (void *)42);
 	ft_printf("Write a pointer %p\n", NULL);
 	ft_printf("Write a number %d, %i\n", 2147483647, 2147483647);
@@ -94,7 +94,7 @@ int	main(void)
 	ft_printf("\nComparison to the results of the original printf():\n");
 	printf("Write a character %c\n", '!');
 	printf("Write a string %s\n", "Hello, there!");
-	printf("Write a string %s\n", (char *) NULL);
+	printf("Write a string %s\n", (char *)NULL);
 	printf("Write a pointer %p\n", (void *)42);
 	printf("Write a pointer %p\n", NULL);
 	printf("Write a number %d, %i\n", 2147483647, 2147483647);
@@ -103,7 +103,7 @@ int	main(void)
 	printf("Write a percent sign %%\n");
 
 	ft_printf("\nError check:\n");
-	ft_printf("Get an error msg: %q\n");
-
+	ft_printf("Get an error msg: %q\n", 42);
+//	printf("Get an error msg: %q\n", 42);
 	return (0);
-} */
+}  */
