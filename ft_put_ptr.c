@@ -19,6 +19,7 @@ int	ft_put_ptr(void *ptr)
 	int				count;
 
 	count = 0;
+	//the output for the NULL pointer type is (nil) for Ubuntu and 0x0 for MacOS.
 	if (ptr == NULL)
 	{
 		count = count + ft_put_str("(nil)");
