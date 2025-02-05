@@ -1,16 +1,20 @@
-# Reimentation of printf()
+# Reimentation of printf() 🖨
 
-#### Task: 
-write a library that containns a function ft_printf() that immitates the original printf().
+### 🚀 Task: 
+---
 
-#### The prototype is:
+Write a library that containns a function **ft_printf()** that immitates the original printf().
 
-int ft_printf(char const \*, ...);
+---
 
-#### Authorised functions:
+### 📝 The prototype is:
+
+`int ft_printf(char const \*, ...);`
+
+### 🛂 Authorised functions:
 malloc, free, write, va_start, va_arg, va_copy, va_end.
 
-### Requisits:
+### 📝 Requisits:
 
 - The reimplemented function will be compared to the original printf().
 
@@ -28,7 +32,7 @@ malloc, free, write, va_start, va_arg, va_copy, va_end.
   - %X: prints an uppercase hexadecimal (base 16) number.
   - % %: to print the percent symbol.
 
-### Understanding how printf works:
+### 🤔 Understanding how printf works:
 
 1. Writes a character one by one until reachicg '%'.
 2. When it finds a '%', it looks at the next character to define the type of the variable argument.
@@ -44,7 +48,7 @@ printf() returns an int to check for errors:
 - (+) value = success;
 - (-) value = error.
 
-## Variadic function and its arguments
+### 🌀🔢 Variadic function and its arguments
 
 The *printf()* in C is a *variadic function*: it accepts a variable number of arguments instead of the fixed one. The variadic function must have at least one mandatory argument.
 
@@ -52,13 +56,13 @@ Until someone calls the printf(), we don't know in advance how many elements the
 
 va_list in <stdarg.h> library is a list that contains all the dynamic arguments.
 
-* void *va_start*(va_list arg_ptr, last) - starts the list and connects it to the last fixed argument.
+* `void *va_start*(va_list arg_ptr, last)` - starts the list and connects it to the last fixed argument.
 
-* type *va_arg*(va_list arg_ptr, type)
+* `type *va_arg*(va_list arg_ptr, type)`
 
-* void *va_end*(va_list arg_ptr) - frees the used memory.
+* `void *va_end*(va_list arg_ptr)` - frees the used memory.
 
-* void *va_copy*(va_list dest, va_list src)
+* `void *va_copy*(va_list dest, va_list src)`
 
 *arg_ptr* is a variable that is initialized by va_start to point to the first variable argument.
 
